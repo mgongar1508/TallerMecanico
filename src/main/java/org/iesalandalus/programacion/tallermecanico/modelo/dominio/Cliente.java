@@ -36,7 +36,7 @@ public class Cliente {
         return telefono;
     }
 
-    public void setDni(String dni) {
+    private void setDni(String dni) {
         Objects.requireNonNull(dni, "El DNI no puede ser nulo.");
         if(!dni.matches(ER_DNI)){
             throw new IllegalArgumentException("El DNI no tiene un formato válido.");
